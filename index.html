@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Home Design Website</title>
+    <link rel="proconect" href="https://fonts.gstatic.com" />
+
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alata&display=swap"
+      rel="stylesheet" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+      integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I"
+      crossorigin="anonymous" />
+
+    <!-- <link rel="stylesheet" type="text/css" href="style.css"> -->
+    <link rel="stylesheet" type="text/css" href="style1212.css" />
+  </head>
+  <body>
+    <!-- Loader -->
+    <div class="loader-container">
+      <div class="loader-wrapper">
+        <div class="loader loader-outer">
+          <div class="loader loader-inner"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Header Section -->
+    <header data-aos="fade-down">
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#about">About</a></li>
+
+          
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Main Section -->
+    <section class="hero-section">
+      <h1 data-aos="fade-up">Welcome to our Home Design Website</h1>
+      <p data-aos="fade-down">
+        Discover the perfect home design for your dream house.
+      </p>
+      <div data-aos="fade-up" class="container">
+        <div class="btn"><a href="Swarg4..2.html">Start</a></div>
+      </div>
+      <img data-aos="fade" src="pngwing.com.png" alt="" />
+    </section>
+
+  
+
+
+    <!-- About Section  -->
+    <section id="about" class="about-section">
+      <h1 data-aos="fade-down">About Us</h1>
+      <p data-aos="fade-left">
+        Iam your helper, Let me help you make your dream home a new and
+        attractive home.
+      </p>
+      <p data-aos="fade-right">
+        In our website you will find innovative designs from which you can use
+        your favorite designs in your home.
+      </p>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+      <p>&copy; 2023 Home Design Website. All rights reserved.</p>
+    </footer>
+
+    <!-- Loader -->
+    <script>
+      const preloader = document.querySelector(".loader-container");
+      const preloaderDuration = 500;
+
+      const hidePreloader = () => {
+        setTimeout(() => {
+          preloader.classList.add("hide");
+        }, preloaderDuration);
+      };
+
+      window.addEventListener("load", hidePreloader);
+    </script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        offset: 250,
+        duration: 1000,
+      });
+    </script>
+  </body>
+</html>
